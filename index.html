@@ -1,0 +1,126 @@
+<!--Index page containing information on events/news/featured ride-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This head section contains all the invisible information about the page -->
+<head>
+    <title>Fun Village - Amusement Park</title>
+    
+    <!--css file/s-->
+    <link rel="stylesheet" href="fun_village.css">    
+    
+    <!--meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width intial-scale=1.0">
+    <meta name="refresh" content="600">
+    <meta name="description" content="Front page of the amusement park Fun Village containing news, events, rides and contact details">
+    <meta name="keywords" content="Amusement park, Theme Park, Fun Village">
+    <meta name="author" content="Fun Village">
+</head>
+
+
+<!-- This body section contains the structure for all the visble content -->
+<body>
+
+<!--Header for all the pages containing navigation bars to moves between different pages-->    
+<header>
+    <!-- <img src="img/FunVillageLogo.png" alt="Logo of Fun Village" usemap="#homepage" height="150" width="150"> -->
+
+    <map name="homepage">
+        <area shape="rect" coords="0,0,150,150" alt="Return to home page" href="index.html">
+    </map>
+    <nav>
+        <ul id = "navUnorderedList">
+            <li id = "navList"><a id = "navListIMG" href="index.html"><img src="img/FunVillageLogo.png" alt="Logo of Fun Village" usemap="#homepage" height="150" width="150"></li>
+            <li id = "navList"><a id = "navListText" href="facilities.html">Facilities</a></li>
+            <li id = "navList"><a id = "navListText" href="tickets.html">Tickets</a></li>
+        </ul>
+    </nav>
+
+<!--Introduction text contained in header with park name and slogan-->
+    <div id="fpIntro">
+        <h1>Fun Village - Amusement Park</h1>
+        <p>Welcome to the most anticipated amusement park opening in 2022</p>
+        <p><em>Enter possible slogan here</em></p>
+    </div>
+</header>
+
+<!--Scrollable banners with news and events containing text and images-->
+<!--Banners with be displayed each seperately and navigated with a directional area-->
+<div id="fpNewsAndEvents">
+    <div class="fpEventBanner">
+        <h2>Grand Opening</h2>
+        <p>Fun Village has opened as of 01/05/2022</p>
+        <img src="img/grandopeningbannerfp.png" alt="Banner of grand opening" height="150" width="300">
+    </div>
+
+    <div class="fpEventBanner">
+        <h2>Reduces prices</h2>
+        <p>See the amazing special offers available</p>
+        <img src="img/SpecialsBanner.png" alt="Banner of ticket specials" height="150" width="300">
+    </div>
+
+    <div class="fpEventBanner">
+        <h2>Extended operating hours</h2>
+        <p>During the month of May extended hours</p>
+        <img src="img/ExtendedHoursBanner.png" alt="Banner of extended hours" height="150" width="300">
+    </div>
+</div>
+<br>
+
+<div id="fpFeaturedRides">
+    <div class="fpRidesInformation">
+        <h2>Featured ride</h2> <!--Each header will change according to selected ride-->
+        <img src="ride1.png" alt="Selected feature ride" height="200" width="200"> <!--Selected ride from below images-->
+        <p>Short description of seleceted featured ride, e.g. when it was buildt, highest speed reached, maximum g-force.</p> <!-- Each description will change for the selected ride-->
+    </div>   
+    
+    <!--Hyperlinked image of different available rides at the park-->
+    <div class="fpRidesInformation">  
+        <img src="ride2.png" alt="Image of selectable ride" height="100" width="100">
+        <img src="ride3.png" alt="Image of selectable ride" height="100" width="100">
+        <img src="ride4.png" alt="Image of selectable ride" height="100" width="100">
+    </div>
+</div>
+
+<!--Footer containing address, navigation tools and logo-->
+<footer>
+    <div id="ContactUs">
+        <div class="ContactDescription">
+            <h2>
+                Contact Us
+            </h2>
+            <p>
+                Please contact us for asking anything related to our park.
+            </p>
+            <p>
+                24/7 Email & Call 09:00 ~ 20:00
+            </p>
+        <div class="ContactPhoneNumber">
+            <p>
+                088-9990-9990
+            </p>
+        </div>
+        <div class="ContactEmail">
+            <p>
+                formoreinfo@funpark.com
+            </p>
+        </div>
+        </div>
+    </div>
+    <div id="fpFooterInformation">
+        <address>3030 Wyatt Street
+            STANFORD, Indiana(IN), 47463
+            </address>
+        <ul id="navUnorderedList">
+            <li id="navList">    <img src="img/FunVillageLogo.png" alt="Logo of Fun Village" usemap="#homepage" height="150" width="150"> </li>
+            <li id="navList"><a id="navListText" href="facilities.html">Facilities</a></li>
+            <li id="navList"><a id="navListText"href="tickets.html">Tickets</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
