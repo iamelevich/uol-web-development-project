@@ -1,0 +1,249 @@
+$header-bg: #333131;
+
+$footer-info-bg: adjust-color($header-bg, $alpha: -0.3);
+$footer-text: adjust-color(gray, $lightness: +30%);
+
+$hover-color: #5b96db;
+$title-color: adjust-color($hover-color, $lightness: +10%);
+
+$events-bg: adjust-color($header-bg, $alpha: -0.3);
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        color: $hover-color;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $title-color;
+}
+
+header {
+    color: white;
+    font-family: Verdana;
+    text-align: center;
+    height: 450px;
+
+    background-image: url('/img/header_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .nav-list {
+        font-size: 40px;
+        display: flex;
+        align-items: stretch;
+        width: 100%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 150px;
+        background-color: adjust-color($header-bg, $alpha: -0.3);
+
+        &-item {
+            float: left;
+            display: block;
+            list-style-type: none;
+            block-size: 150px;
+            margin: 0;
+            padding: 0;
+            border-right: 1px solid white;
+
+            a:hover {
+                background-color: adjust-color($hover-color, $alpha: -0.3);
+            }
+
+            &.active {
+                background-color: adjust-color($hover-color, $alpha: -0.3);
+            }
+
+            &-img {
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                height: 150px;
+                padding: 0;
+            }
+
+            &-text {
+                display: block;
+                block-size: 150px;
+                color: white;
+                text-align: justify;
+                padding: 0 15px;
+                line-height: 150px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .intro {
+        border: 2px solid white;
+        margin: 50px auto;
+        background-color: adjust-color($header-bg, $alpha: -0.3);
+        color: white;
+        padding: 0 15px;
+        max-width: 600px;
+
+        &-title {
+            color: $title-color;
+            text-decoration: none;
+            margin: 0;
+            line-height: 80px;
+            font-size: 30px;
+        }
+
+        &-desc {
+            color: white;
+        }
+
+        &-slogan {
+            color: white;
+        }
+    }
+}
+
+footer {
+    background-image: url('/img/footer_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Verdana;
+    text-align: center;
+    height: 300px;
+
+    .grid {
+        display: inline-grid;
+        margin: 50px auto;
+        grid-template-columns: auto auto;
+        column-gap: 20px;
+
+        &-item {
+            display: block;
+            border: 2px white solid;
+            background-color: $footer-info-bg;
+            padding: 10px;
+        }
+    }
+
+    .contact-us {
+        color: $footer-text;
+
+        &-title {
+            color: $title-color;
+            text-decoration: none;
+        }
+
+        &-text {
+            margin: 0;
+        }
+    }
+
+    .footer-nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+}
+
+.content {
+    min-height: calc(100vh - 750px);
+    padding: 20px;
+
+    .events {
+        display: inline-grid;
+        margin: 50px auto;
+        grid-template-columns: auto auto auto;
+        column-gap: 20px;
+
+        .event {
+            border: #5b96db solid 1px;
+            border-radius: 50%;
+
+            background-image: var(--background);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 50px;
+            color: white;
+
+            &-inner {
+                background-color: $events-bg;
+                padding: 10px;
+            }
+
+            &-title {
+                color: $title-color;
+            }
+        }
+    }
+
+    .facilities {
+        display: inline-grid;
+        margin: 50px auto;
+        grid-template-columns: auto auto;
+        gap: 20px;
+
+        .facility {
+            border: #5b96db solid 1px;
+            background-image: var(--background);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 50px;
+            color: white;
+
+            &-inner {
+                background-color: $events-bg;
+                padding: 10px;
+            }
+
+            &-title {
+                color: $title-color;
+            }
+        }
+    }
+
+    .memberships {
+        &-grid {
+            display: inline-grid;
+            margin: 50px auto;
+            grid-template-columns: auto auto;
+            gap: 20px;
+
+            .membership {
+                color: white;
+                background-color: $hover-color;
+                padding: 20px;
+            }
+        }
+    }
+
+    .tickets {
+        &-grid {
+            display: inline-grid;
+            margin: 50px auto;
+            grid-template-columns: auto auto auto;
+            gap: 20px;
+
+            .ticket {
+                color: white;
+                background-color: $hover-color;
+                padding: 20px;
+            }
+        }
+    }
+}

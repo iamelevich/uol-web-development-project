@@ -1,0 +1,55 @@
+{% set activeTickets = true %}
+
+{% extends "layouts/main.njk" %}
+
+{% block content %}
+<!-- This section's for selling memberships and tickets, while listing out offers-->
+<!-- The plan is to have both selections be available on the main page, two types of membership -->
+<!-- and three ticket types.-->
+
+<!-- The plan is to also implement a drop down menu for purchasing and embedding a payment display. -->
+
+<div class="memberships">
+    <h1 class="memberships-title">
+        Make the most out of your vists!
+    </h1>
+    <p class="memberships-desc">
+        We offer annual and monthly memberships for a variety of onsite perks:
+    </p>
+
+    <div class="memberships-grid">
+        <div class="membership">
+            <h2>GOLD</h2>
+            <p>Come and go as you please, skip every line, get attractive discounts at the promenade and any events that take place at our concert venue. For a limited time only, grab this membership 40$ in the first month!</p>
+            <em> Regular Price: 80$ </em>
+        </div>
+        <div class="membership">
+            <h2>PLATINUM</h2>
+            <p>For those looking for an even more special experience, our annual Platinum plan for just <em>800$</em> annually, gets you all the perks of a GOLD membership, with guaranteed access, and even bigger discounts!</p>
+            * <em> Limited slots, book now!</em>
+        </div>
+    </div>
+</div>
+
+<div class="tickets">
+    <h1 class="tickets-title"> Skip the queue!</h1>
+    <p class="tickets-desc">Book your tickets right here, guarantee your access by booking a slot!</p>
+
+    <div class="tickets-grid">
+        <div class="ticket">
+            <h2 class="ticket-title">Standard</h2>
+            <p class="ticket-desc">Enjoy the village and all it has to offer for just 5$!</p>
+            <em>Valid for single entry.</em>
+        </div>
+        <div class="ticket">
+            <h2 class="ticket-title">Premium*</h2>
+            <p class="ticket-desc">Enjoy all the benefits of a GOLD membership (excluding multiple entry) for one day at just 20$!</p>
+        </div>
+        <div class="ticket">
+            <h2 class="ticket-title">Ultimate*</h2>
+            <p class="ticket-desc">Take your experience to the next level- get all the benefits of a platinum membership for a day for 50$!</p>
+            *<em> Limited quantity sold per date.</em>
+        </div>
+    </div>
+</div>
+{% endblock %}
