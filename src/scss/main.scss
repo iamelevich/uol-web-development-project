@@ -228,6 +228,19 @@ footer {
                 color: white;
                 background-color: $hover-color;
                 padding: 20px;
+                width: 300px;
+                height: 200px;
+
+                &-button {
+                    background-color: white;
+                    border: 1px solid white;
+                    padding: 10px 20px;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: adjust-color(gray, $lightness: +30%);
+                    }
+                }
             }
         }
     }
@@ -243,7 +256,54 @@ footer {
                 color: white;
                 background-color: $hover-color;
                 padding: 20px;
+                width: 200px;
+                height: 200px;
+
+                &-button {
+                    background-color: white;
+                    border: 1px solid white;
+                    padding: 10px 20px;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: adjust-color(gray, $lightness: +30%);
+                    }
+                }
             }
+        }
+    }
+
+    .flip-card {
+        background-color: transparent;
+        perspective: 1000px;
+
+        &-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        &:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        &-front, &-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        &-back {
+            background-color: $hover-color;
+            transform: rotateY(180deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
