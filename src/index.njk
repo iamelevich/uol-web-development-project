@@ -7,7 +7,7 @@
 <!--Banners with be displayed each seperately and navigated with a directional area-->
 <div class="events">
     {% for event in events %}
-    <div class="event" style="--background: url('/{{ event.img }}')">
+    <div class="event" style="--background: url('{{ event.img }}')">
         <div class="event-inner">
             <h2 class="event-title">{{ event.title }}</h2>
             <p class="event-desc">{{ event.desc }}</p>

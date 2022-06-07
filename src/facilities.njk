@@ -9,7 +9,7 @@
 
 <div class="facilities">
     {% for facility in facilities %}
-    <div class="facility" style="--background: url('/{{ facility.img }}')">
+    <div class="facility" style="--background: url('{{ facility.img }}')">
         <div class="facility-inner">
             <h2 class="facility-title">{{ facility.title }}</h2>
             <p class="facility-desc">{{ facility.desc }}</p>

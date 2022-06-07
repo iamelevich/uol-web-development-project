@@ -24,7 +24,7 @@ header {
   font-family: Verdana;
   text-align: center;
   height: 450px;
-  background-image: url("/img/header_bg.jpg");
+  background-image: url("../img/header_bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -106,7 +106,7 @@ header .intro-slogan {
 }
 
 footer {
-  background-image: url("/img/footer_bg.jpg");
+  background-image: url("../img/footer_bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
