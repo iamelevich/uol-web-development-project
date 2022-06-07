@@ -151,7 +151,6 @@ footer .footer-nav {
 
 .content {
   min-height: calc(100vh - 750px);
-  padding: 20px;
 }
 
 .content .events {
@@ -181,11 +180,28 @@ footer .footer-nav {
   color: #85b1e4;
 }
 
+.content .achivements {
+  background-color: #afcced;
+  color: white;
+  padding: 30px auto;
+}
+
+.content .achivements-title {
+  color: white;
+}
+
+.content .achivements-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 20px;
+}
+
 .content .facilities {
   display: inline-grid;
   margin: 50px auto;
   grid-template-columns: auto auto;
   gap: 20px;
+  padding: 0 20px;
 }
 
 .content .facilities .facility {
@@ -294,6 +310,9 @@ footer .footer-nav {
 }
 
 @media only screen and (max-width: 760px) {
+  .content .achivements-grid {
+    grid-template-columns: auto auto;
+  }
   .content .facilities, .content .events {
     grid-template-columns: auto;
     gap: 20px;
@@ -320,6 +339,9 @@ footer .footer-nav {
   header .intro-title {
     line-height: 40px;
     font-size: 20px;
+  }
+  .content .achivements-grid {
+    grid-template-columns: auto;
   }
 }
 

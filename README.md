@@ -1,5 +1,7 @@
 # Web Development I Project
 
+Live link: https://iamelevich.github.io/uol-web-development-project/
+
 ## Requirements
 
 - Nodejs (https://nodejs.org/en/)

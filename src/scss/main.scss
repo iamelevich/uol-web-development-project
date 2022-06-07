@@ -162,7 +162,6 @@ footer {
 
 .content {
     min-height: calc(100vh - 750px);
-    padding: 20px;
 
     .events {
         display: inline-grid;
@@ -192,11 +191,28 @@ footer {
         }
     }
 
+    .achivements {
+        background-color: adjust-color($hover-color, $lightness: +20%);
+        color: white;
+        padding: 30px auto;
+
+        &-title {
+            color: white;
+        }
+
+        &-grid {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            column-gap: 20px;
+        }
+    }
+
     .facilities {
         display: inline-grid;
         margin: 50px auto;
         grid-template-columns: auto auto;
         gap: 20px;
+        padding: 0 20px;
 
         .facility {
             border: #5b96db solid 1px;
@@ -311,6 +327,12 @@ footer {
 
 @media only screen and (max-width: 760px) {
     .content {
+        .achivements {
+            &-grid {
+                grid-template-columns: auto auto;
+            }
+        }
+
         .facilities, .events {
             grid-template-columns: auto;
             gap: 20px;
@@ -346,6 +368,14 @@ footer {
             &-title {
                 line-height: 40px;
                 font-size: 20px;
+            }
+        }
+    }
+
+    .content {
+        .achivements {
+            &-grid {
+                grid-template-columns: auto;
             }
         }
     }
