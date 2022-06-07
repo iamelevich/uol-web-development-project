@@ -48,7 +48,7 @@ Metalsmith(__dirname)
         ],
     })
     .source('./src')            // source directory
-    .destination('./build')     // destination directory
+    .destination('./docs')     // destination directory
     .clean(true)                // clean destination before
     .use(inPlace())
     .use(sass({
