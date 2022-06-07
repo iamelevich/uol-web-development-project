@@ -1,0 +1,331 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5b96db;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #85b1e4;
+}
+
+header {
+  color: white;
+  font-family: Verdana;
+  text-align: center;
+  height: 450px;
+  background-image: url("/img/header_bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .nav-list {
+  font-size: 40px;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 150px;
+  background-color: rgba(51, 49, 49, 0.7);
+}
+
+header .nav-list-item {
+  float: left;
+  display: block;
+  list-style-type: none;
+  block-size: 150px;
+  margin: 0;
+  padding: 0;
+  border-right: 1px solid white;
+}
+
+header .nav-list-item:hover {
+  background-color: rgba(91, 150, 219, 0.7);
+}
+
+header .nav-list-item.active {
+  background-color: rgba(91, 150, 219, 0.7);
+}
+
+header .nav-list-item-img {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  height: 150px;
+  padding: 0;
+}
+
+header .nav-list-item-text {
+  display: block;
+  block-size: 150px;
+  color: white;
+  text-align: justify;
+  padding: 0 15px;
+  line-height: 150px;
+  text-decoration: none;
+}
+
+header .intro {
+  border: 2px solid white;
+  margin: 50px auto;
+  background-color: rgba(51, 49, 49, 0.7);
+  color: white;
+  padding: 0 15px;
+  max-width: 600px;
+}
+
+header .intro-title {
+  color: #85b1e4;
+  text-decoration: none;
+  margin: 0;
+  line-height: 80px;
+  font-size: 30px;
+}
+
+header .intro-desc {
+  color: white;
+}
+
+header .intro-slogan {
+  color: white;
+}
+
+footer {
+  background-image: url("/img/footer_bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Verdana;
+  text-align: center;
+  min-height: 300px;
+}
+
+footer .grid {
+  display: inline-grid;
+  margin: 50px auto;
+  grid-template-columns: auto;
+  gap: 20px;
+}
+
+footer .grid-item {
+  display: block;
+  border: 2px white solid;
+  background-color: rgba(51, 49, 49, 0.7);
+  padding: 10px;
+}
+
+footer .contact-us {
+  color: #cdcdcd;
+}
+
+footer .contact-us-title {
+  color: #85b1e4;
+  text-decoration: none;
+}
+
+footer .contact-us-text {
+  margin: 0;
+}
+
+footer .footer-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.content {
+  min-height: calc(100vh - 750px);
+  padding: 20px;
+}
+
+.content .events {
+  display: inline-grid;
+  margin: 30px auto;
+  grid-template-columns: auto auto auto;
+  column-gap: 20px;
+}
+
+.content .events .event {
+  border: #5b96db solid 1px;
+  border-radius: 50%;
+  background-image: var(--background);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  color: white;
+}
+
+.content .events .event-inner {
+  background-color: rgba(51, 49, 49, 0.7);
+  padding: 10px;
+}
+
+.content .events .event-title {
+  color: #85b1e4;
+}
+
+.content .facilities {
+  display: inline-grid;
+  margin: 50px auto;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+.content .facilities .facility {
+  border: #5b96db solid 1px;
+  background-image: var(--background);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  color: white;
+}
+
+.content .facilities .facility-inner {
+  background-color: rgba(51, 49, 49, 0.7);
+  padding: 10px;
+}
+
+.content .facilities .facility-title {
+  color: #85b1e4;
+}
+
+.content .memberships-grid {
+  display: inline-grid;
+  margin: 50px auto;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+.content .memberships-grid .membership {
+  color: white;
+  background-color: #5b96db;
+  padding: 20px;
+  width: 300px;
+  height: 200px;
+}
+
+.content .memberships-grid .membership-button {
+  background-color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+}
+
+.content .memberships-grid .membership-button:hover {
+  cursor: pointer;
+  background-color: #cdcdcd;
+}
+
+.content .tickets-grid {
+  display: inline-grid;
+  margin: 50px auto;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+
+.content .tickets-grid .ticket {
+  color: white;
+  background-color: #5b96db;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.content .tickets-grid .ticket-button {
+  background-color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+}
+
+.content .tickets-grid .ticket-button:hover {
+  cursor: pointer;
+  background-color: #cdcdcd;
+}
+
+.content .flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.content .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.content .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.content .flip-card-front, .content .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.content .flip-card-back {
+  background-color: #5b96db;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 760px) {
+  .content .facilities, .content .events {
+    grid-template-columns: auto;
+    gap: 20px;
+  }
+  .content .tickets-grid, .content .memberships-grid {
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  header .nav-list {
+    flex-direction: column;
+    height: 150px;
+  }
+  header .nav-list-item {
+    block-size: 50px;
+    border-bottom: 1px solid white;
+  }
+  header .nav-list-item-text {
+    block-size: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+  header .intro-title {
+    line-height: 40px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .content .memberships .membership {
+    width: 200px;
+    height: 300px;
+  }
+}
