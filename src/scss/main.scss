@@ -61,7 +61,7 @@ header {
             padding: 0;
             border-right: 1px solid white;
 
-            a:hover {
+            &:hover {
                 background-color: adjust-color($hover-color, $alpha: -0.3);
             }
 
@@ -70,7 +70,8 @@ header {
             }
 
             &-img {
-                display: block;
+                display: flex;
+                justify-content: center;
                 text-align: center;
                 text-decoration: none;
                 height: 150px;
@@ -122,13 +123,13 @@ footer {
     background-size: cover;
     font-family: Verdana;
     text-align: center;
-    height: 300px;
+    min-height: 300px;
 
     .grid {
         display: inline-grid;
         margin: 50px auto;
-        grid-template-columns: auto auto;
-        column-gap: 20px;
+        grid-template-columns: auto;
+        gap: 20px;
 
         &-item {
             display: block;
@@ -165,7 +166,7 @@ footer {
 
     .events {
         display: inline-grid;
-        margin: 50px auto;
+        margin: 30px auto;
         grid-template-columns: auto auto auto;
         column-gap: 20px;
 
@@ -304,6 +305,59 @@ footer {
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .content {
+        .facilities, .events {
+            grid-template-columns: auto;
+            gap: 20px;
+        }
+
+        .tickets, .memberships {
+            &-grid {
+                grid-template-columns: auto;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    header {
+        .nav-list {
+            flex-direction: column;
+            height: 150px;
+
+            &-item {
+                block-size: 50px;
+                border-bottom: 1px solid white;
+
+                &-text {
+                    block-size: 50px;
+                    line-height: 50px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .intro {
+            &-title {
+                line-height: 40px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .content {
+        .memberships {
+            .membership {
+                width: 200px;
+                height: 300px;
+            }
         }
     }
 }
